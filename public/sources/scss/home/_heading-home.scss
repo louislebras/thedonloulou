@@ -1,0 +1,30 @@
+.heading-home-logotype {
+  width: 100%;
+  z-index: 10 !important;
+  position: relative;
+}
+
+.aka-word {
+  position: relative;
+  height: 10px;
+  padding-left: calc(14.28vw - 5px);
+  margin-top: 10px;
+  //   border: 1px solid red;
+  z-index: 1;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: -10px;
+  left: -2vw;
+  object-fit: cover;
+  z-index: 0;
+  border: 0px;
+}
+
+.doc {
+  position: relative;
+  height: 300vh;
+}

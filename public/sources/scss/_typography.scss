@@ -1,0 +1,127 @@
+@import "./variables";
+
+.h1-style {
+  font-size: calc(
+    84px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 120
+  );
+  letter-spacing: -0.03em;
+  line-height: 112%;
+  font-weight: 400;
+  font-family: $maintype;
+}
+
+@media (max-width: 800px) {
+  .h1-style {
+    font-size: 36px;
+  }
+}
+
+.h2-style {
+  font-size: calc(
+    75px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 120
+  );
+  letter-spacing: -0.03em;
+  line-height: 117%;
+  font-weight: 400;
+  //   margin-bottom: 20px;
+  font-family: $maintype;
+}
+
+@media (max-width: 800px) {
+  .h2-style {
+    font-size: 26px;
+  }
+}
+
+.h3-style {
+  font-size: calc(
+    60px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 120
+  );
+  letter-spacing: -0.03em;
+  line-height: 130%;
+  font-weight: 400;
+  font-family: $maintype;
+  //   margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .h3-style {
+    font-size: 22px;
+  }
+}
+
+.h4-style {
+  font-size: calc(
+    20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: 0.01em;
+  line-height: 152%;
+  font-weight: 400;
+  font-family: "Stamina Bold";
+  text-transform: uppercase;
+  //   margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .h4-style {
+    font-size: 11px;
+  }
+}
+
+.p-style {
+  font-size: calc(
+    21px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.01em;
+  line-height: 152%;
+  font-weight: 400;
+  //   margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .p-style {
+    font-size: 18px;
+  }
+}
+
+.link-style {
+  font-size: calc(
+    21px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.02em;
+  line-height: 152%;
+  font-weight: 400;
+  //   margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .link-style {
+    font-size: 18px;
+  }
+}
+
+.nav-item {
+  font-size: calc(
+    20px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.01em;
+  line-height: 152%;
+  font-family: "Stamina Bold";
+  font-weight: 800;
+  text-transform: uppercase;
+
+  line-height: 152%;
+  //   margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .nav-item {
+    font-size: 10px;
+  }
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}

@@ -1,0 +1,37 @@
+@import "./variables", "./reset", "./fonts", "./footer", "./header", "./layout",
+  "./typography", "./noise";
+
+html,
+body {
+  width: 100%;
+  //   overflow-x: hidden;
+  background-color: $background;
+  display: block;
+}
+
+html {
+  padding: 10px 2vw;
+}
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $secondtype;
+  color: $type;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  //   border: 1px solid red;
+}
+
+main {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  html {
+    padding: 0 10px;
+  }
+}
