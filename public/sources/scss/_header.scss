@@ -1,8 +1,12 @@
 header {
   width: 100%;
   position: sticky;
-  top: 10px;
-  margin-top: -10px;
+  top: 5px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 10;
 }
 
 .main-navigation {
@@ -14,7 +18,55 @@ header {
 }
 
 .partonenav {
+  height: fit-content;
   a {
     margin-right: 30px;
+  }
+}
+
+.second-header {
+  transform: translate3d(60px, 0, 0);
+  opacity: 0;
+  transition: transform $short $easeOut, opacity $short $easeOut;
+  z-index: 999999;
+  position: fixed;
+  top: 8px;
+  &.darkHeader {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  img {
+    height: 16px !important;
+    margin-left: calc(0);
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 65.5vh;
+
+    .main-navigation {
+      margin: 0;
+      width: fit-content;
+    }
+  }
+  .second-header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    left: 50%;
+    margin-left: 0;
+    transform: translate3d(-50%, 60px, 0);
+    &.darkHeader {
+      transform: translate3d(-50%, 0, 0);
+      opacity: 1;
+    }
+    img {
+      margin-left: 0;
+    }
   }
 }

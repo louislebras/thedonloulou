@@ -67,9 +67,9 @@
   height: calc(#{sqrt(math.pow(100, 2) * 2) + "vw"} + 20rem);
   background-position: 50%;
   background-image: url("../../content/medias/noise.png");
-  opacity: 0.06;
+  opacity: 0.1;
   transform: translate(-50%, -50%);
-  animation: noise 1s steps(2) infinite;
+  animation: noise 1s steps(3) infinite;
   pointer-events: none;
   user-select: none;
   z-index: 99999999999999999;

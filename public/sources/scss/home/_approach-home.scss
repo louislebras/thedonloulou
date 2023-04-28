@@ -1,0 +1,16 @@
+@import "../variables";
+
+.approach-home {
+  width: 100%;
+  margin-top: 10vh;
+
+  p {
+    text-indent: calc(14.5%);
+  }
+}
+
+@media (max-width: 800px) {
+  .approach-home {
+    margin-top: 10vh;
+  }
+}

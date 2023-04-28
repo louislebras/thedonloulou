@@ -1,0 +1,165 @@
+@import "../variables";
+
+.container-image-hover-heading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  transition: opacity 0s;
+  pointer-events: none;
+
+  //   border: 1px solid red;
+  img {
+    width: 40%;
+    top: 47%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: auto;
+  }
+}
+
+.hover-donloulou {
+  opacity: 1;
+  transition: opacity 0.4s $easeOut;
+  z-index: 99 !important;
+}
+
+.container-img-links-heading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -99;
+  pointer-events: none;
+  img,
+  video {
+    width: 35%;
+    position: absolute;
+  }
+
+  .img-stamina-heading {
+    left: 10%;
+    top: 15%;
+    width: 35%;
+  }
+
+  .img-emk-heading {
+    left: 60%;
+    top: 10%;
+    width: 25%;
+  }
+  .img-openai-heading {
+    right: 5%;
+    top: 17%;
+    width: 25%;
+  }
+  .img-memoriae-heading {
+    left: 5%;
+    top: 25%;
+    // width: 25%;
+  }
+}
+
+.appear-image-heading-stamina {
+  opacity: 1;
+  z-index: 99;
+
+  .img-emk-heading {
+    display: none;
+  }
+
+  .img-openai-heading {
+    display: none;
+  }
+
+  .img-memoriae-heading {
+    display: none;
+  }
+}
+
+.appear-image-heading-emk {
+  opacity: 1;
+  z-index: 99;
+
+  .img-stamina-heading {
+    display: none;
+  }
+
+  .img-openai-heading {
+    display: none;
+  }
+
+  .img-memoriae-heading {
+    display: none;
+  }
+}
+
+.appear-image-heading-openai {
+  opacity: 1;
+  z-index: 99;
+
+  .img-stamina-heading {
+    display: none;
+  }
+
+  .img-emk-heading {
+    display: none;
+  }
+
+  .img-memoriae-heading {
+    display: none;
+  }
+}
+
+.appear-image-heading-memoriae {
+  opacity: 1;
+  z-index: 99;
+
+  .img-stamina-heading {
+    display: none;
+  }
+
+  .img-emk-heading {
+    display: none;
+  }
+
+  .img-openai-heading {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-image-hover-heading {
+    opacity: 1;
+    position: relative;
+    // border: 1px solid red;
+    height: fit-content;
+    padding: 0;
+    margin-top: 62vh;
+    display: block;
+    width: 100vw;
+    margin-left: -10px;
+
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-left: -0px;
+      top: 0%;
+      left: 0%;
+      transform: translate(-0%, -0%);
+    }
+  }
+
+  .container-img-links-heading {
+    display: none;
+  }
+}

@@ -36,3 +36,12 @@
   font-style: normal;
   font-weight: 800;
 }
+
+@font-face {
+  font-family: "Stamina Extra Bold";
+  src: url("../../content/fonts/staminaextrabold.woff2") format("woff2"),
+    url("../../content/fonts/staminaextrabold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 1200;
+}

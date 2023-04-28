@@ -8,6 +8,8 @@
   display: flex;
   justify-content: space-between;
   display: none;
+  z-index: 100;
+  pointer-events: none;
 }
 
 .grid {

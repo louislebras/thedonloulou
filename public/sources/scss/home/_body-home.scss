@@ -1,0 +1,48 @@
+@import "../variables";
+
+.body-home {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: -10px;
+  height: calc(50vh);
+  margin-top: 50vh;
+  //   border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-bottom: 3vh;
+}
+
+.photo-word {
+  //   border: 1px solid red;
+  width: fit-content;
+  margin-left: calc(71.8% + 7px);
+  line-height: 100%;
+  cursor: pointer;
+  //   height: fit-content;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 5vh;
+  a {
+    padding-bottom: 0px;
+    // line-height: 70%;
+  }
+  //   border: 1px solid red;
+  //   text-indent: calc(7.14% + 7.5px);
+  //   margin-left: calc(7.14% + 0px);
+}
+
+@media (max-width: 800px) {
+  .photo-word {
+    display: none;
+  }
+
+  .body-home {
+    margin-top: 15vh;
+  }
+}

@@ -1,0 +1,148 @@
+// footer {
+//   margin-top: 20vh;
+//   display: flex;
+//   justify-content: space-between;
+//   border-top: 1px solid $background2;
+//   padding-top: 20px;
+//   width: calc(100vw);
+//   margin-left: -2vw;
+//   padding-left: 2vw;
+//   padding-bottom: 5vh;
+
+//   .links-footer {
+//     width: calc((50% - 7.5px) + 1vw);
+//     // border: 1px solid red;
+//     display: flex;
+//     flex-direction: column;
+//     a {
+//       width: fit-content;
+//       margin-bottom: 10px;
+//     }
+//   }
+// }
+
+// @media (max-width: 800px) {
+//   footer {
+//     margin-top: 5vh;
+//     flex-direction: column;
+//     width: 100%;
+//     padding-left: calc(50% + 7.5px);
+//     // border: 1px solid red;
+//     margin-left: 0;
+//   }
+// }
+
+@import "./variables";
+
+.links-end {
+  margin-top: 10vh;
+  //   margin-left: calc(8.33vw - 10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: calc(96vw);
+
+  //   border: 1px solid red;
+  //   padding-left: 2vw;
+
+  p {
+    width: calc(50% - 7.5px);
+  }
+
+  .item-link {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .links-end {
+    margin-left: 0;
+    flex-direction: column;
+    width: 95%;
+    p {
+      width: 100%;
+      margin-top: 05vh;
+    }
+
+    .container-hover-loulou {
+      margin-left: 0;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  //   padding: 0px calc(8.33vw + 20px);
+  padding-top: 28vh;
+  position: relative;
+  //   border: 1px solid red;
+
+  nav {
+    width: calc(50% - 7.5px);
+    // position: fixed;
+    border: 1px solid red;
+    margin-left: calc(50% + 20px);
+    // bottom: 50vh;
+
+    a {
+      margin-right: 3.5vw;
+    }
+
+    .item-link {
+      padding-bottom: 0;
+    }
+  }
+
+  .donloulou-footer {
+    margin-top: 10px;
+    width: 70%;
+  }
+
+  .trademark-footer {
+    position: absolute;
+    top: 10vh;
+    width: 5.5vw;
+  }
+
+  .privacy {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      &:hover {
+        color: $background2;
+        border-bottom: none;
+        transition: $short $easeOut;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    padding-top: 20vh;
+    padding-bottom: 25px;
+
+    nav {
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 3.5vw;
+    }
+
+    .donloulou-footer {
+      margin-top: 5vh;
+      width: 100%;
+    }
+    .trademark-footer {
+      width: 15vw;
+    }
+  }
+}

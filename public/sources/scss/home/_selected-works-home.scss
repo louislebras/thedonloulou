@@ -1,0 +1,26 @@
+@import "../variables";
+
+.selected-works {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-works-clients {
+  display: flex;
+  flex-direction: column;
+  a {
+    margin-bottom: 10px;
+  }
+
+  a:hover {
+    opacity: 0.5;
+    // transition: 0.2s;
+  }
+}
+
+@media (max-width: 800px) {
+  .selected-works {
+    margin-top: 10vh;
+  }
+}
