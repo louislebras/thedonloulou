@@ -1,0 +1,153 @@
+.head-home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  h1 {
+    // padding-top: 0px;
+    text-indent: calc(14.3% + 10px);
+    width: 100%;
+    margin-left: 0;
+  }
+
+  p {
+    margin-top: 7.5px;
+    // z-index: 2;
+    text-indent: calc(14.3% + 10px);
+    svg {
+      height: 10px;
+      // width: 30px;
+    }
+  }
+
+  img,
+  video {
+    width: 40%;
+    margin-top: 22vh;
+  }
+
+  video {
+    border-radius: 999999px;
+  }
+}
+
+.work-scroll-home {
+  position: absolute;
+  top: 95vh;
+  left: 0;
+  line-height: 100%;
+}
+
+@media (max-width: 800px) {
+  .head-home-content {
+    h1 {
+      position: relative;
+      top: -30px;
+      text-indent: calc(10% + 10px);
+
+      br {
+        display: none;
+      }
+    }
+
+    p {
+      text-indent: calc(10% + 10px);
+      margin-top: 20px;
+    }
+
+    img,
+    video {
+      width: 85%;
+      margin-top: 20vh;
+    }
+  }
+
+  .work-scroll-home {
+    display: none;
+  }
+}
+
+.container-double-head-vision {
+  display: flex;
+  margin-bottom: 0vh;
+  margin-top: 10px;
+  width: 100%;
+  h2 {
+    width: calc(42.85% + 10px);
+  }
+  p {
+    text-indent: 0em;
+    width: calc(42.85% + 10px);
+  }
+}
+
+.container-video-showcase {
+  //   height: 70vh;
+
+  img {
+    width: 90%;
+    object-fit: initial;
+    height: auto;
+  }
+}
+
+.container-approach-tryptique {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  width: 100%;
+}
+
+.tryptique-classic {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10vh;
+  h3 {
+    width: calc(42.85% + 10px);
+    padding-left: calc(14.3% + 10px);
+  }
+  p {
+    width: calc(45% - 10px);
+  }
+}
+
+@media (max-width: 800px) {
+  .head-home-content {
+    padding-top: 30px;
+  }
+  .container-double-head-vision {
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 05vh;
+    p {
+      margin-top: 0px;
+      width: 100%;
+      margin-top: 0px;
+    }
+  }
+
+  .container-video-showcase {
+    height: 30vh;
+    margin-bottom: 0vh;
+  }
+
+  .showcase-home-container {
+    margin-bottom: 10vh;
+  }
+
+  .tryptique-classic {
+    flex-direction: column;
+    margin-bottom: 10vh;
+    h3 {
+      text-indent: 0;
+      padding-left: 0;
+      margin-bottom: 20px;
+      // font-size: 28px;
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+  }
+}

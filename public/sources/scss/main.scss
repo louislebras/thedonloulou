@@ -30,8 +30,58 @@ main {
   width: 100%;
 }
 
+.dot-hour {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  position: relative;
+  width: calc(18% - 5px);
+  position: fixed;
+  bottom: 10px;
+  left: 2vw;
+  z-index: 10;
+  // justify-content: center;
+}
+
+.dot {
+  background-color: red;
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  animation: dotClick 1.5s linear infinite;
+}
+
+.hour {
+  display: flex;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0.5px;
+  margin-left: 5px;
+}
+
+@keyframes dotClick {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
 @media (max-width: 800px) {
   html {
     padding: 10px 10px;
+  }
+
+  .dot-hour {
+    display: none;
   }
 }

@@ -23,8 +23,9 @@ video {
   clip-path: inset(1px 1px);
   z-index: 0;
   border: 0px;
-  // mix-blend-mode: multiply;
+  // mix-blend-mode: difference;
   filter: saturate(0);
+  opacity: 0.9;
 }
 
 .doc {

@@ -80,11 +80,11 @@
   font-size: calc(
     114px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 120
   );
-  letter-spacing: -0em;
-  line-height: 120%;
-  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 100%;
+  font-weight: 200;
   font-family: $maintype;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 @media (max-width: 800px) {

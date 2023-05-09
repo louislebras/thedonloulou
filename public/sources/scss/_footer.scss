@@ -35,7 +35,7 @@
 @import "./variables";
 
 .links-end {
-  margin-top: 10vh;
+  margin-top: 20vh;
   //   margin-left: calc(8.33vw - 10px);
   display: flex;
   justify-content: space-between;
@@ -59,6 +59,7 @@
     margin-left: 0;
     flex-direction: column;
     width: 95%;
+    margin-top: 5vh;
     p {
       width: 100%;
       margin-top: 05vh;
@@ -78,6 +79,7 @@ footer {
   //   padding: 0px calc(8.33vw + 20px);
   padding-top: 28vh;
   position: relative;
+  margin-top: 10vh;
   //   border: 1px solid red;
 
   nav {
@@ -103,7 +105,7 @@ footer {
 
   .trademark-footer {
     position: absolute;
-    top: 10vh;
+    top: 5vh;
     width: 5.5vw;
   }
 
@@ -127,6 +129,7 @@ footer {
   footer {
     padding-top: 20vh;
     padding-bottom: 25px;
+    margin-top: 5vh;
 
     nav {
       width: 100%;

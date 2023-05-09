@@ -1,0 +1,134 @@
+@import "../variables";
+
+.work-home-content {
+  margin-top: 15vh;
+  h2 {
+    text-indent: calc(14.3% + 10px);
+  }
+}
+
+.showcase-home-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+  //   p {
+  //     span {
+  //       //   color: $color4;
+  //     }
+  //   }
+}
+
+.container-video-showcase {
+  width: 100%;
+  height: 60vh;
+  //   background-color: $color3;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0vh;
+  img,
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+.work-title-home {
+  margin-top: 22vh;
+  margin-left: calc(50% + 5px);
+}
+
+.container-double-work-home {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  //   p {
+  //     span {
+  //       //   color: $color4;
+  //     }
+  //   }
+}
+
+.single-container-home-work {
+  width: calc(50% - 7.5px);
+}
+
+.content-single-work {
+  background-color: $background2;
+  height: calc(50vw - 15px);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img,
+  video {
+    border-radius: 8px;
+    width: calc(90%);
+    height: 60%;
+    object-fit: cover;
+  }
+}
+
+.content-single-work-2 {
+  img,
+  video {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+}
+
+.content-single-work3 {
+  img,
+  video {
+    border-radius: 999990px;
+  }
+}
+
+@media (max-width: 800px) {
+  .work-home-content {
+    margin-top: 0vh;
+    h2 {
+      text-indent: calc(5% + 10px);
+    }
+  }
+
+  .br-title {
+    display: none;
+  }
+
+  .showcase-home-container {
+    margin-top: 10vh;
+  }
+  .container-video-showcase {
+    height: calc(100vw - 20px);
+    img,
+    video {
+      border-radius: 7px;
+      width: calc(90%);
+      height: 60%;
+      object-fit: cover;
+    }
+  }
+
+  .work-title-home {
+    margin-top: 10vh;
+  }
+  .container-double-work-home {
+    flex-direction: column;
+  }
+
+  .single-container-home-work {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .content-single-work {
+    height: calc(100vw - 20px);
+  }
+}

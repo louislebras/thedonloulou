@@ -9,13 +9,16 @@
 .list-works-clients {
   display: flex;
   flex-direction: column;
-  a {
+  .h2plus-style {
     margin-bottom: 10px;
+    transition: 1;
+    color: $type2;
   }
 
-  a:hover {
-    opacity: 0.5;
-    // transition: 0.2s;
+  .h2plus-style:hover {
+    opacity: 0.15;
+    transition: 1;
+    // color: red;
   }
 }
 
