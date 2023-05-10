@@ -17,7 +17,7 @@
   margin-bottom: 10px;
 
   img {
-    width: calc(50% - 5px);
+    width: calc(50% - 7.5px);
     object-fit: cover;
   }
 }
@@ -39,12 +39,17 @@
 
 .secondary-title-case {
   margin-top: 10vh;
+  width: 80%;
   padding-bottom: 5vh;
 }
 
 @media (max-width: 800px) {
   .showcase-home-container {
     margin-bottom: 10vh;
+  }
+
+  header {
+    top: 23vh;
   }
 
   .secondary-title-case {
