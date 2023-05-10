@@ -1,0 +1,51 @@
+.about-video-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  video {
+    width: 38%;
+
+    border-radius: 4000px;
+  }
+}
+
+.heading-vision {
+  h2 {
+    margin-top: 15vh;
+  }
+}
+
+.container-about-experience {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15vh;
+  p {
+    width: calc(50% - 7.5px);
+    // border: 1px solid red;
+  }
+}
+
+@media (max-width: 800px) {
+  .heading-vision {
+    p {
+      margin-top: 15vh;
+    }
+  }
+
+  .container-about-experience {
+    flex-direction: column;
+    p {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  .about-video-page {
+    margin-top: 5vh;
+    video {
+      width: 90%;
+    }
+  }
+}
