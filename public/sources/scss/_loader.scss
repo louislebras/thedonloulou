@@ -1,0 +1,95 @@
+@import "./variables";
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: $background;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -99999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: appearLoader 1.5s ease;
+  opacity: 0;
+  display: flex;
+
+  p {
+    opacity: 1;
+    font-size: calc(
+      26px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    );
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 80%;
+    letter-spacing: -0.02em;
+  }
+  .container-img-loader {
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    // margin-top: 10px;
+    transform: translate(-50%, -50%);
+    img {
+      z-index: 200 !important;
+
+      //   animation: fadeUp 1s ease;
+      transition: 0.3s;
+      position: relative;
+      opacity: 1;
+      width: 5.5vw;
+    }
+  }
+
+  @keyframes fadeUp {
+    0% {
+      bottom: 100px;
+      opacity: 0;
+    }
+
+    100% {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes appearLoader {
+  0% {
+    opacity: 1;
+    display: flex;
+    z-index: 99999999999;
+  }
+
+  59% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+    display: flex;
+    z-index: 99999999999;
+  }
+
+  91% {
+    display: none;
+    z-index: -99999999999;
+  }
+
+  100% {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .loader {
+    .container-img-loader {
+      top: 41.4vh;
+      left: 50%;
+      img {
+        width: 15vw;
+      }
+    }
+  }
+}

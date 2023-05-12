@@ -5,14 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louis Le Bras aka Donloulou®, Strategist & Entrepreneur / Founder StaminaClub®</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title"
+        content="Louis Le Bras aka Donloulou®, Strategist EPAM & Entrepreneur / Founder StaminaClub®" />
+    <meta property="og:type" content="Louis Le Bras aka Donloulou®, StaminaClub®" />
+    <meta property="og:url" content="https://louislebras.com/" />
+    <meta property="og:image" content="https://louislebras.com/louislebras.gif/" />
+    <link rel="shortcut icon" href="https://louislebras.com/favicon.png/" type="image/png" />
+    <meta name="description"
+        content="Louis Le Bras is a strategist at EPAM and entrepreneur and founder of the StaminaClub®, a club of great entrepreneurs who share their secrets and methods of achievement." />
+
+    <meta name="author" content="Louis Le Bras / StaminaClub®" />
+    <meta name="copyright" content="Louis Le Bras" />
+    <title>Louis Le Bras aka Donloulou®, Strategist EPAM & Entrepreneur / Founder StaminaClub®</title>
     <link rel="stylesheet" href="./public/sources/css/main.css">
     <link rel="stylesheet" href="./public/sources/css/home/main-home.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script>
+        $(document).ready(function ($) {
+            var Body = $("body");
+            Body.addClass("preloader-site");
+        });
+        $(window).load(function () {
+            $(".preloader-wrapper").fadeOut(1000);
+            $("body").removeClass("preloader-site");
+        });
+    </script>
 </head>
 
 <body>
     <div id="noise"></div>
+
+    <div class="loader">
+
+        <div class="container-img-loader">
+            <img src="./public/content/brand-assets/louislebras-trademark-white-donloulou-louis-le-bras-emakina-epam-strategist.svg"
+                alt="trademark Stamina Vision® Louis Le Bras Donloulou®" />
+        </div>
+    </div>
     <div class="layout">
         <div class="grid"></div>
         <div class="grid"></div>
@@ -71,8 +102,10 @@
             <div class="photo-word container-hover-loulou">
                 <p class="nav-item underlined-type2 photo-link-home">Photo</p>
             </div>
-            <h1 class="h2-style">Strategist at <a class="underlined-type1 link-emk" href="">Emakina / EPAM</a> <br>
-                Entrepreneur, Founder of the <a class="underlined-type1" href="">STAMINA CLUB</a> <br>
+            <h1 class="h2-style">Strategist at <a class="underlined-type1 link-emk" href="https://emakina.com/">Emakina
+                    / EPAM</a> <br>
+                Entrepreneur, Founder of the <a class="underlined-type1 link-stamina" href="./work/staminaclub/">STAMINA
+                    CLUB</a> <br>
                 I help you to articulate your vision and <br>
                 make it real to craft a high-value performance brand.</h1>
 
@@ -83,14 +116,14 @@
                 alt="Photo de profil Louis Le Bras Donloulou®">
         </div>
         <div class="container-img-links-heading">
-            <video muted loop playsinline autoplay class="img-stamina-heading"
-                src="./public/content/medias/donlouloustaminablack.mp4"></video>
+            <img class="img-stamina-heading" src="./public/content/medias/stamina-cover-louislebras-donloulou.png"
+                alt="Emakina Group part of EPAM dont Louis Le Bras en est membre">
         </div>
         <div class="container-img-links-heading">
             <img class="img-emk-heading" src="./public/content/medias/emakina-cover-louislebras-donloulou.png"
                 alt="Emakina Group part of EPAM dont Louis Le Bras en est membre">
         </div>
-        <section class="how-can-help-home">
+        <section data-aos="fade-up" class="how-can-help-home">
             <div class="logos-section">
                 <img class="logo1" src="./public/content/brand-assets/logo-microsoft-white-louislebras-donloulou.svg"
                     alt="">
@@ -105,7 +138,7 @@
             </div>
         </section>
 
-        <section class="approach-home">
+        <section data-aos="fade-up" class="approach-home">
             <p class="h1-style">The most successful and remarkable companies are those that have developed a real soul
                 and essence through their brand.
                 The secret to developing this essence, often beyond the conventional and the real, is to build and
@@ -122,10 +155,10 @@
         </section>
 
         <section class="solutions-home-new">
-            <p class="h1-style">To make it real, </p>
-            <h3 class="h1plus-style">We have to craft your brand
+            <p data-aos="fade-up" class="h1-style">To make it real, </p>
+            <h3 data-aos="fade-up" class="h1plus-style">We have to craft your brand
                 through this disciplined approach</h3>
-            <div class="container-solutions">
+            <div data-aos="fade-up" class="container-solutions">
                 <div class="solution-content">
                     <p class="h3plus-style">01</p>
                     <h4 class="h4-style">By Identifying Opportunities to Providing Guidance</h4>
@@ -164,7 +197,7 @@
 
         </section>
 
-        <section class="services-home">
+        <section data-aos="fade-up" class="services-home">
             <h2 class="h3-style">How can I help you</h2>
             <div class="services-list-container">
                 <div class="content-services">
@@ -195,17 +228,17 @@
         <section class="selected-works">
             <h3 class="h3-style">Selected works</h3>
             <div class="list-works-clients">
-                <a class="h2plus-style" href="./work/fraser-yachts/">Fraser Yachts</a>
-                <a class="h2plus-style" href="./work/nike/">Nike</a>
-                <a class="h2plus-style" href="./work/staminaclub/">Stamina Club</a>
-                <a class="h2plus-style" href="./work/kitchen-aid/">KitchenAid</a>
+                <a data-aos="fade-up" class="h2plus-style" href="./work/fraser-yachts/">Fraser Yachts</a>
+                <a data-aos="fade-up" class="h2plus-style" href="./work/nike/">Nike</a>
+                <a data-aos="fade-up" class="h2plus-style" href="./work/staminaclub/">Stamina Club</a>
+                <a data-aos="fade-up" class="h2plus-style" href="./work/kitchen-aid/">KitchenAid</a>
 
-                <a class="h2plus-style" href="./work/donzelli/">Donzelli</a>
+                <a data-aos="fade-up" class="h2plus-style" href="./work/donzelli/">Donzelli</a>
             </div>
         </section>
 
 
-        <section class="links-end">
+        <section data-aos="fade-up" class="links-end">
             <h5 class="h3-style">Others links</h5>
             <p class=" h3-style">
 
@@ -254,6 +287,10 @@
     <script src="./public/sources/js/classHover.js"></script>
     <script src="./public/sources/js/fixedHeader.js"></script>
     <script src="./public/sources/js/time.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> -->
 </body>
 
 </html>
