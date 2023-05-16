@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20vh;
   video {
     width: 38%;
 
@@ -12,8 +12,11 @@
 }
 
 .heading-vision {
-  h2 {
-    margin-top: 15vh;
+  p {
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+    text-indent: 7.33%;
   }
 }
 
@@ -22,7 +25,8 @@
   justify-content: space-between;
   margin-top: 15vh;
   p {
-    width: calc(50% - 7.5px);
+    width: calc(38% - 7.5px);
+    margin-right: 12%;
     // border: 1px solid red;
   }
 }
